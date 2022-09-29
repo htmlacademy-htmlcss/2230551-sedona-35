@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+</head>
 
-  </body>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="header__link">
+                    <img class="header__logo logo" src="#" alt="logo">
+                </a>
+                <nav class="header__navigation">
+                    <ul class="navigation__menu">
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Главная</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">О седоне</a>
+                        </li>
+                        <li class="navigation__menu-item">
+                            <a href="#" class="navigation__menu-link">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user-menu">
+                    <a href="#" class="user-menun__link">
+                        <img class="loupe" src="#" alt="loupe">
+                    </a>
+                    <a href="#" class="user-menun__link">
+                        <img class="favorite" src="#" alt="favorite">
+                    </a>
+                    <button class="user-menu__btn">Хочу сюда!</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="description">
+            <div class="container">
+                <h1 class="description__title">
+                    Седона — небольшой городок в Аризоне,
+                    заслуживающий большего!
+                </h1>
+                <h3 class="description__subtitle">
+                    Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+                </h3>
+                <div class="description__feauters">
+                    <div class="feauters__box feauters__box--one">
+                        <h3 class="feauters__title feauters__title--mod">
+                            Настоящий городок
+                        </h3>
+                        <p class="feauters__text">
+                            Седона — не аттракцион для туристов, там течёт своя жизнь
+                        </p>
+                    </div>
+                    <img class="feauters__box-img" src="#" alt="feauters-img">
+                    <div class="feauters__box feauters__box--two">
+                        <h3 class="feauters__title">
+                            Небольшая площадь
+                        </h3>
+                        <p class="feauters__text">
+                            Все достопримечательности находятся очень близко
+                        </p>
+                    </div>
+                    <div class="feauters__box feauters__box--three">
+                        <h3 class="feauters__title">
+                            Красивая дорога
+                        </h3>
+                        <p class="feauters__text">
+                            Ехать в Седону из Лас-Вегаса совсем не скучно!
+                        </p>
+                    </div>
+                    <div class="feauters__box feauters__box--two">
+                        <h3 class="feauters__title">
+                            Мало туристов
+                        </h3>
+                        <p class="feauters__text">
+                            Большинство едет в Гранд Каньон и толпится там
+                        </p>
+                    </div>
+                    <img class="feauters__box-img" src="#" alt="feauters-img">
+                    <div class="feauters__box feauters__box--one">
+                        <h3 class="feauters__title feauters__title--mod">
+                            Там есть мост дьявола
+                        </h3>
+                        <p class="feauters__text">
+                            Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                        </p>
+                    </div>
+                    <div class="feauters__box">
+                        <img class="feauters__advantage-img" src="#" alt="feauters-advantage-img">
+                        <div class="feauters__advantage-title">
+                            Жильё
+                        </div>
+                        <p class="feauters__advantage-text">
+                            Рекомендуем пожитьв настоящем мотеле, всё как в кино!
+                        </p>
+                    </div>
+                    <div class="feauters__box">
+                        <img class="feauters__advantage-img" src="#" alt="feauters-advantage-img">
+                        <div class="feauters__advantage-title">
+                            Еда
+                        </div>
+                        <p class="feauters__advantage-text">
+                            Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                        </p>
+                    </div>
+                    <div class="feauters__box">
+                        <img class="feauters__advantage-img" src="#" alt="feauters-advantage-img">
+                        <div class="feauters__advantage-title">
+                            Сувениры
+                        </div>
+                        <p class="feauters__advantage-text">
+                            Не только китайского, но и настоящего местного производства!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="search">
+            <h1 class="search__title">
+                Заинтересовались?
+            </h1>
+            <p class="search__text">
+                Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <button class="search__button">
+                ПОИСК ГОСТИНИЦЫ В седоне
+            </button>
+        </section>
+        <section class="mailing">
+            <div class="container">
+                <h1 class="mailing__title">
+                    Подпишитесь на рассылку
+                </h1>
+                <p class="mailing__text">
+                    Только полезная информация и никакого спама, честное бойскаутское!
+                </p>
+                <form class="mailing__form">
+                    <input class="mailing__input" type="email" placeholder="Ваш e-mail">
+                    <button class="mailing__btn">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__socials">
+                    <a href="" class="footer__socials-link">
+                        <img class="footer__socials-img" src="#" alt="vk-logo">
+                    </a>
+                    <a href="" class="footer__socials-link">
+                        <img class="footer__socials-img" src="#" alt="telegram-logo">
+                    </a>
+                    <a href="" class="footer__socials-link">
+                        <img class="footer__socials-img" src="#" alt="yt-logo">
+                    </a>
+                </div>
+                <a class="footer__phone" href="+78128121212">
+                    +7 (812) 812-12-12
+                </a>
+                <img class="html-academy-logo" src="#" alt="html-academy-logo">
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
