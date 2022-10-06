@@ -12,9 +12,12 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a href="#" class="header__link">
-                    <img class="header__logo logo" src="images/logo.png" alt="logo">
-                </a>
+                <span class="visually-hidden">
+                    Логотип
+                    <a href="#" class="header__link">
+                        <img class="header__logo logo" src="images/logo.png" width="138" height="64" alt="logo">
+                    </a>
+                </span>
                 <nav class="header__navigation">
                     <ul class="navigation__menu">
                         <li class="navigation__menu-item">
@@ -30,10 +33,12 @@
                 </nav>
                 <div class="header__user-menu">
                     <a href="#" class="user-menun__link">
-                        <img class="loupe" src="images/search.svg" alt="loupe">
+                        <img class="loupe" src="images/search.svg" width="44" height="64" alt="loupe">
+                        <span class="visually-hidden">Поиск</span>
                     </a>
                     <a href="#" class="user-menun__link">
-                        <img class="favorite" src="images/favorite.svg" alt="favorite">
+                        <img class="favorite" src="images/favorite.svg" width="44" height="64" alt="favorite">
+                        <span class="visually-hidden">Избранное</span>
                     </a>
                     <button class="user-menu__btn">Хочу сюда!</button>
                 </div>
@@ -49,12 +54,13 @@
                 <div class="breadcrubs">
                     <ul class="breadcrubs__list">
                         <li class="breadcrubs__item">
-                            <a href="" class="breadcrubs__link">
-                                <img class="breadcrubs__icon" src="images/home.svg" alt="home-page-icon">
+                            <a href="#" class="breadcrubs__link">
+                                <img class="breadcrubs__icon" src="images/home.svg" width="13" height="15" alt="home-page-icon">
+                                <span class="visually-hidden">На главную страницу</span>
                             </a>
                         </li>
                         <li class="breadcrubs__item">
-                            <a href="" class="breadcrubs__link">
+                            <a href="#" class="breadcrubs__link">
                                 Гостиницы
                             </a>
                         </li>
@@ -66,19 +72,19 @@
                         <ul class="catalog__infrastructure-list">
                             <li class="catalog__infrastructure-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Бассейн
                                 </label>
                             </li>
                             <li class="catalog_infrastructure-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Парковка
                                 </label>
                             </li>
                             <li class="catalog__infrastructure-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Wi-Fi
                                 </label>
                             </li>
@@ -90,19 +96,19 @@
                         <ul class="catalog__house-list">
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Гостиница
                                 </label>
                             </li>
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Мотель
                                 </label>
                             </li>
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-radio" type="radio">
+                                    <input class="catalog__input-checkbox" type="checkbox">
                                     Апартаменты
                                 </label>
                             </li>
@@ -121,31 +127,75 @@
         </section>
         <section class="hotels">
             <div class="container">
+                <h3 class="hotels__title">Найдено гостиниц: <span class="hotels__select-span">38</span></h3>
                 <select class="hotels__select">
-                    <h1 class="hotels__title">Найдено гостиниц: <span class="hotels__select-span">38</span></h1>
                     <option value="cheap">Сначала дешёвое</option>
                     <option value="expensive">Сначала дорогое</option>
-                    <ul class="hotels__view-btn-list">
-                        <li class="hotels__view-btn-item">
-                            <a class="hotels__view-btn-link" href="#">
-                                <img class="hotels__view-btn-img" src="images/card-view.png" alt="card-view-icon">
-                            </a>
-                        </li>
-                        <li class="hotels__view-btn-item">
-                            <a class="hotels__view-btn-link" href="#">
-                                <img class="hotels__view-btn-img" src="images/slide-view.png" alt="slide-view-icon">
-                            </a>    
-                        </li>
-                        <li class="hotels__view-btn-item">
-                            <a class="hotels__view-btn-link" href="#">
-                                <img class="hotels__view-btn-img" src="images/list-view.png" alt="list-view-icon">
-                            </a>
-                        </li>
-                    </ul>
                 </select>
+                <ul class="hotels__view-list">
+                    <li class="hotels__view-item">
+                        <a class="hotels__view-link" href="#">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_31)">
+                                    <path d="M4 0H0V6H4V0Z" fill="black" />
+                                    <path d="M16 0H12V6H16V0Z" fill="black" />
+                                    <path d="M10 0H6V6H10V0Z" fill="black" />
+                                    <path d="M4 8H0V14H4V8Z" fill="black" />
+                                    <path d="M16 8H12V14H16V8Z" fill="black" />
+                                    <path d="M10 8H6V14H10V8Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_31">
+                                        <rect width="16" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hotels__view-item">
+                        <a class="hotels__view-link" href="#">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_321)">
+                                    <path d="M16 12H0V14H16V12Z" fill="black" />
+                                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_321">
+                                        <rect width="16" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="hotels__view-item">
+                        <a class="hotels__view-link" href="#">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_105)">
+                                    <path d="M2 0H0V2H2V0Z" fill="black" />
+                                    <path d="M16 0H4V2H16V0Z" fill="black" />
+                                    <path d="M2 4H0V6H2V4Z" fill="black" />
+                                    <path d="M16 4H4V6H16V4Z" fill="black" />
+                                    <path d="M2 8H0V10H2V8Z" fill="black" />
+                                    <path d="M16 8H4V10H16V8Z" fill="black" />
+                                    <path d="M2 12H0V14H2V12Z" fill="black" />
+                                    <path d="M16 12H4V14H16V12Z" fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_105">
+                                        <rect width="16" height="14" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
                 <div class="hotels__catalog">
                     <div class="hotels__catalog-item">
-                        <img class="hotels__catalog-img" src="images/hotel-1.jpg" alt="hotel-img">
+                        <img class="hotels__catalog-img" src="images/hotel-1.jpg" width="300" height="212"
+                            alt="hotel-img">
                         <h3 class="holets__catalog-title">Amara Resort & Spa</h3>
                         <div class="hotels__catalog-subtitle">
                             <p class="hotels__catalog-subtitle-text">Гостиница</p>
@@ -153,56 +203,30 @@
                         </div>
                         <button class="hotels__catalog-detail">подробнее</button>
                         <button class="favorite">в избранное</button>
-                        <div class="hotels__rating">
-                            <div class="hotels__rating-item">1 ★</div>
-                            <div class="hotels__rating-item">2 ★</div>
-                            <div class="hotels__rating-item">3 ★</div>
-                            <div class="hotels__rating-item">4 ★</div>
-                            <div class="hotels__rating-item">5 ★</div>
-                            <button class="hotels__rating-text">Рейтинг: 8,5</button>
-                        </div>
+                        <div class="hotels__rating-text">Рейтинг: <span class="hotels__rating-span">8,5</span></div>
                     </div>
                     <div class="hotels__catalog-item">
-                        <img class="hotels__catalog-img" src="images/hotel-2.jpg" alt="hotel-img">
-                        <h3 class="holets__catalog-title"></h3>
+                        <img class="hotels__catalog-img" src="images/hotel-2.jpg" width="300" height="212"
+                            alt="hotel-img">
+                        <h3 class="holets__catalog-title">Villas at Poco Diablo</h3>
                         <button class="hotels__catalog-detail">подробнее</button>
                         <button class="favorite">в избранное</button>
-                        <div class="hotels__rating">
-                            <div class="hotels__rating-item">1 ★</div>
-                            <div class="hotels__rating-item">2 ★</div>
-                            <div class="hotels__rating-item">3 ★</div>
-                            <div class="hotels__rating-item">4 ★</div>
-                            <div class="hotels__rating-item">5 ★</div>
-                            <button class="hotels__rating-text">Рейтинг: 9,2</button>
-                        </div>
+                        <div class="hotels__rating-text">Рейтинг: <span class="hotels__rating-span">9,2</span></div>
                     </div>
                     <div class="hotels__catalog-item">
-                        <img class="hotels__catalog-img" src="images/hotel-3.jpg" alt="hotel-img">
-                        <h3 class="holets__catalog-title"></h3>
+                        <img class="hotels__catalog-img" src="images/hotel-3.jpg" width="300" height="212"
+                            alt="hotel-img">
+                        <h3 class="holets__catalog-title">Desert Quail Inn</h3>
                         <button class="hotels__catalog-detail">подробнее</button>
                         <button class="favorite">в избранное</button>
-                        <div class="hotels__rating">
-                            <div class="hotels__rating-item">1 ★</div>
-                            <div class="hotels__rating-item">2 ★</div>
-                            <div class="hotels__rating-item">3 ★</div>
-                            <div class="hotels__rating-item">4 ★</div>
-                            <div class="hotels__rating-item">5 ★</div>
-                            <button class="hotels__rating-text">Рейтинг: 6,9</button>
-                        </div>
+                        <div class="hotels__rating-text">Рейтинг: <span class="hotels__rating-span">6,9</span></div>
                     </div>
                     <div class="hotels__catalog-item">
-                        <img class="hotels__catalog-img" src="images/hotel-4.jpg" alt="hotel-img">
-                        <h3 class="holets__catalog-title"></h3>
+                        <img class="hotels__catalog-img" src="images/hotel-4.jpg" width="300" height="212" alt="hotel">
+                        <h3 class="holets__catalog-title">GreenTree Inn</h3>
                         <button class="hotels__catalog-detail">подробнее</button>
                         <button class="favorite">в избранное</button>
-                        <div class="hotels__rating">
-                            <div class="hotels__rating-item">1 ★</div>
-                            <div class="hotels__rating-item">2 ★</div>
-                            <div class="hotels__rating-item">3 ★</div>
-                            <div class="hotels__rating-item">4 ★</div>
-                            <div class="hotels__rating-item">5 ★</div>
-                            <button class="hotels__rating-text">Рейтинг: 5,0</button>
-                        </div>
+                        <div class="hotels__rating-text">Рейтинг: <span class="hotels__rating-span">5,0</span></div>
                     </div>
                 </div>
                 <ul class="pagination">
@@ -228,33 +252,35 @@
             </div>
         </section>
         <section class="subscribe">
-            <h1 class="subscribe__title">Подпишитесь на рассылку</h1>
-            <div class="subscribe__subtitle">
+            <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+            <p class="subscribe__subtitle">
                 Только полезная информация и никакого спама, честное бойскаутское!
-            </div>
-            <input class="subscribe__input" type="text" placeholder="Ваш e-mail">
+            </p>
+            <input class="subscribe__input" type="email" placeholder="Ваш e-mail">
             <button class="subscribe__btn">Подписаться</button>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__socials">
-                    <a href="" class="footer__socials-link">
-                        <img class="footer__socials-img" src="images/vk.svg" alt="vk-logo">
-                    </a>
-                    <a href="" class="footer__socials-link">
-                        <img class="footer__socials-img" src="images/telegram.svg" alt="telegram-logo">
-                    </a>
-                    <a href="" class="footer__socials-link">
-                        <img class="footer__socials-img" src="images/youtube.svg" alt="yt-logo">
-                    </a>
-                </div>
-                <a class="footer__phone" href="+78128121212">
-                    +7 (812) 812-12-12
+        <div class="container footer__inner">
+            <div class="footer__socials">
+                <a href="" class="footer__socials-link">
+                    <img class="footer__socials-img" src="images/vk.svg" width="47" height="40" alt="vk-logo">
                 </a>
-                <img class="html-academy-logo" src="images/htmlacademy-logo.jpg" alt="html-academy-logo">
+                <a href="" class="footer__socials-link">
+                    <img class="footer__socials-img" src="images/telegram.svg" width="47" height="40"
+                        alt="telegram-logo">
+                </a>
+                <a href="" class="footer__socials-link">
+                    <img class="footer__socials-img" src="images/youtube.svg" width="47" height="40" alt="yt-logo">
+                </a>
             </div>
+            <a class="footer__phone" href="tel:+78128121212">
+                +7 (812) 812-12-12
+            </a>
+            <a href="" class="footer__htmlacademy-link">
+                <img class="html-academylogo" src="images/htmlacademy-logo.jpg" width="115" height="33"
+                    alt="html-academy-logo">
+            </a>
         </div>
     </footer>
 </body>
