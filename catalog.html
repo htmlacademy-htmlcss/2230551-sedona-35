@@ -12,12 +12,10 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <span class="visually-hidden">
-                    Логотип
-                    <a href="#" class="header__link">
-                        <img class="header__logo logo" src="images/logo.png" width="138" height="64" alt="logo">
-                    </a>
-                </span>
+                Логотип
+                <a href="#" class="header__link">
+                    <img class="header__logo logo" src="images/logo.png" width="138" height="64" alt="logo">
+                </a>
                 <nav class="header__navigation">
                     <ul class="navigation__menu">
                         <li class="navigation__menu-item">
@@ -51,21 +49,20 @@
                 <h1 class="catalog__title">
                     Гостиницы Седоны
                 </h1>
-                <div class="breadcrubs">
-                    <ul class="breadcrubs__list">
-                        <li class="breadcrubs__item">
-                            <a href="#" class="breadcrubs__link">
-                                <img class="breadcrubs__icon" src="images/home.svg" width="13" height="15" alt="home-page-icon">
-                                <span class="visually-hidden">На главную страницу</span>
-                            </a>
-                        </li>
-                        <li class="breadcrubs__item">
-                            <a href="#" class="breadcrubs__link">
-                                Гостиницы
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="breadcrubs__list">
+                    <li class="breadcrubs__item">
+                        <a href="#" class="breadcrubs__link">
+                            <img class="breadcrubs__icon" src="images/home.svg" width="13" height="15"
+                                alt="home-page-icon">
+                            <span class="visually-hidden">На главную страницу</span>
+                        </a>
+                    </li>
+                    <li class="breadcrubs__item">
+                        <a href="#" class="breadcrubs__link">
+                            Гостиницы
+                        </a>
+                    </li>
+                </ul>
                 <form class="catalog__form">
                     <fieldset class="catalog__infrastructure">
                         <legend class="catalog__infrastructure-title">Инфраструктура:</legend>
@@ -96,19 +93,19 @@
                         <ul class="catalog__house-list">
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-checkbox" type="checkbox">
+                                    <input class="catalog__input-radio" value="hostel" name="house" type="radio">
                                     Гостиница
                                 </label>
                             </li>
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-checkbox" type="checkbox">
+                                    <input class="catalog__input-radio" value="motel" name="house" type="radio">
                                     Мотель
                                 </label>
                             </li>
                             <li class="catalog__house-item">
                                 <label class="catalog__label">
-                                    <input class="catalog__input-checkbox" type="checkbox">
+                                    <input class="catalog__input-radio" value="apps" name="house" type="radio">
                                     Апартаменты
                                 </label>
                             </li>
