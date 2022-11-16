@@ -76,7 +76,6 @@ body {
   fill: rgb(61, 198, 252);
 }
 .header__link-logo {
-
   margin-right: 45px;
   z-index: 1;
   align-self: flex-start;
@@ -942,13 +941,15 @@ body {
   margin-top: 20px;
 }
 .holets__catalog-title {
-  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000;
   margin-left: 20px;
   margin: 16px 0 16px 20px;
+  width: 300px;
+  height: 28px;
+  overflow: hidden;
 }
 .hotels__catalog-subtitle {
   display: flex;
